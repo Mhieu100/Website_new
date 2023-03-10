@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500;600;700&display=swap');
+
+/***************************************/
+/*                                     */
+/*                                     */
+/*              ScrollBar              */
+/*                                     */
+/*                                     */
+/***************************************/
+/* width */
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}
+
+/***************************************/
+/*                                     */
+/*                                     */
+/*               All Page              */
+/*                                     */
+/*                                     */
+/***************************************/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Mono', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/***************************************/
+/*                                     */
+/*                                     */
+/*                Header               */
+/*                                     */
+/*                                     */
+/***************************************/
+
+header .nav {
+    display: flex;
+    background-color: #326069;
+}
+
+header .nav .nav-left {
+    flex: 1;
+    margin-left: 120px;
+}
+
+header .nav .nav-left img {
+    width: 60px;
+}
+
+header .nav .nav-center {
+    flex: 3;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+
+header .nav .nav-center .icon-search {
+    position: absolute;
+    font-size: 16px;
+    padding: 9px;
+    background-color: rgb(169, 169, 169);
+}
+
+header .nav .nav-center input {
+    width: 500px;
+    height: 34px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 18px;
+    color: #6a6565;
+}
+
+header .nav .nav-right {
+    flex: 2;
+}
+
+header .nav .nav-right ul {
+    padding: 20px;
+}
+
+header .nav .nav-right ul li {
+    display: inline-flex;
+    margin: 0 12px;
+}
+
+header .nav .nav-right ul li a {
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+header .nav .nav-right ul li a:hover {
+    color: rgb(59, 67, 74);
+}
+
+/***************************************/
+/*                                     */
+/*                                     */
+/*                Sliders              */
+/*                                     */
+/*                                     */
+/***************************************/
+
+.mySlides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    width: 100%;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot-container {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #f0eded;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+/***************************************/
+/*                                     */
+/*                                     */
+/*                Event                */
+/*                                     */
+/*                                     */
+/***************************************/
+
+.event {
+    background-color: #326069;
+    padding-top: 20px;
+}
+
+.event-container {
+    position: relative;
+    margin: auto;
+    width: 1200px;
+}
+
+.event-container .custom .item {
+    background-color: #326069;
+}
+
+.event-container .custom .item img {
+    border-radius: 12px;
+}
+
+/***************************************/
+/*                                     */
+/*                                     */
+/*              Category               */
+/*                                     */
+/*                                     */
+/***************************************/
+
+.category {
+    background-color: #326069;
+    padding-top: 20px;
+}
+
+.category-container {
+    position: relative;
+    margin: auto;
+    width: 1200px;
+}
+
+.category-container .title {
+    font-size: 22px;
+    color: #d6d5d5;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.category-container .item {
+    background-color: #326069;
+}
+
+.category-container .item .colum {
+    display: grid;
+}
+
+.category-container .item .colum .card-cat {
+    margin: 3px;
+    background-color: #255660;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+
+/***************************************/
+/*                                     */
+/*                                     */
+/*              Content                */
+/*                                     */
+/*                                     */
+/***************************************/
+
+.content {
+    background-color: #326069;
+    padding-top: 20px;
+}
+
+.content-container {
+    position: relative;
+    margin: auto;
+    width: 1200px;
+}
+
+.content-container .nav {
+    display: inline-flex;
+}
+
+.content-container .title {
+    font-size: 30px;
+    color: #dd4545;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.content-container .countdown {
+    margin-left: 30px;
+}
+
+.content-container .countdown li {
+    display: inline-flex;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    margin-left: 5px;
+    padding: 2px 5px;
+}
+
+.content-container .item {
+    background-color: #d6d5d5;
+}
+
+.content-container .sale-card .price {
+    padding-top: 8px;
+    text-align: center;
+    color: #b30000;
+    font-size: 18px;
+    font-weight: 700;
+    
+}
