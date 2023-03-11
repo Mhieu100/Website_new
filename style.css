@@ -465,8 +465,6 @@ img {
     color: red;
     font-size:14px;
     font-weight: 700;
-    
-    
 }
 
 .suggest-product-container .product-content .card-product .product .info-product .price-quantity .quantiy{
@@ -482,4 +480,84 @@ img {
     color: white;
     padding: 15px 45px;
     border: 4px solid #fff;
+    margin-bottom: 20px;
+}
+
+
+/***************************************/
+/*                                     */
+/*                                     */
+/*                Footer               */
+/*                                     */
+/*                                     */
+/***************************************/
+
+.footer{
+    background-color: rgb(163, 162, 162);
+    
+}
+
+.footer-container{
+    position: relative;
+    margin: auto;
+    width: 1200px;
+}
+
+.footer-content-container{
+    display: flex;
+}
+
+.footer-content-container .content{
+    flex: 1;
+    background-color: rgb(163, 162, 162);
+}
+
+.footer-container .content .title {
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.footer-container .content p{
+    font-size: 12px;
+    color: #484343;
+    margin-top: 3px;
+}
+
+.footer-container .content .img-container img{
+    width: 50px;
+    margin: 5px;
+    background-color: white;
+    border: 3px solid white;
+}
+.hr-footer{
+    border: 1px solid rgb(79, 77, 77);
+    width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.footer-container .social-icon {
+    text-align: center;
+}
+
+.footer-container .social-icon p{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.footer-container .social-icon i{
+    font-size: 30px;
+    margin: 20px;
+}
+.face{
+    color: rgb(14, 66, 177);
+}
+.tris{
+    color: rgb(37, 156, 231);
+}
+.inta{
+    color: rgb(230, 5, 151);
 }
